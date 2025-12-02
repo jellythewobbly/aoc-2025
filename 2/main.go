@@ -46,12 +46,12 @@ func part1(input *string) int64 {
 
 		for {
 			check, _ := strconv.ParseInt(fmt.Sprintf("%v%v", digitInt, digitInt), 10, 64)
-			if check >= lowInt && check <= highInt {
-				sum += check
-			}
-
 			if check > highInt {
 				break
+			}
+
+			if check >= lowInt && check <= highInt {
+				sum += check
 			}
 
 			digitInt++
