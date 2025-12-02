@@ -56,8 +56,6 @@ func part1(input *string) int64 {
 
 			digitInt++
 		}
-
-		fmt.Println(lowInt, highInt)
 	}
 
 	return sum
