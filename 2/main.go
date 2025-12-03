@@ -50,7 +50,7 @@ func part1(input *string) int64 {
 				break
 			}
 
-			if check >= lowInt && check <= highInt {
+			if check >= lowInt {
 				sum += check
 			}
 
